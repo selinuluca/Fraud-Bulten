@@ -8,6 +8,7 @@ Dünyadan ve Türkiye'den haftanın en önemli 10 fraud, siber güvenlik ve AI/t
 - `data/index.json`: hafta listesi, en yenisi en üstte.
 - `data/YYYY-AA-GG.json`: o haftanın 10 haberi (yayın tarihiyle adlandırılır).
 - `kaynaklar.md`: taranan kaynaklar ve seçim ölçütleri.
+- `EDITORYAL.md`: haber seçimi ve özet yazımı için yayın ilkeleri.
 
 ## Haftalık dosya biçimi
 
@@ -15,7 +16,6 @@ Dünyadan ve Türkiye'den haftanın en önemli 10 fraud, siber güvenlik ve AI/t
 {
   "date": "2026-11-16",
   "label": "9–16 Kasım 2026",
-  "theme": "Haftanın tek cümlelik teması",
   "items": [
     {
       "title": "Türkçe başlık",
@@ -24,6 +24,7 @@ Dünyadan ve Türkiye'den haftanın en önemli 10 fraud, siber güvenlik ve AI/t
       "region": "tr | dunya",
       "source": "Kaynak adı",
       "url": "https://...",
+      "more": [{ "source": "İkinci kaynak (isteğe bağlı)", "url": "https://..." }],
       "date": "2026-11-13"
     }
   ]

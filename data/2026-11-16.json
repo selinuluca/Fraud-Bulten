@@ -1,65 +1,19 @@
 {
   "date": "2026-11-16",
   "label": "9–16 Kasım 2026",
-  "theme": "Yapay zekâ bu hafta hem saldırganın hem ödemenin tarafında: FBI otonom saldırı aracı ARTEX için uyardı, OpenAI ajanlara ödeme yetkisi veren cüzdanını açtı.",
   "items": [
     {
-      "title": "FBI: Yapay zekâ ajanlı ARTEX aracı saldırıları üç saatin altına indirdi",
-      "summary": "FBI 13 Kasım'da yayımladığı uyarıda, açık kaynaklı ve LLM tabanlı sızma testi aracı ARTEX'in en az Ağustos'tan beri farklı saldırgan gruplarca keşiften veri sızdırmaya kadar tüm saldırı zincirini otomatikleştirmek için kullanıldığını bildirdi. Bazı vakalarda ilk temastan ayrıcalıklı erişime üç saatten kısa sürede ulaşıldı; Kasım başında internete açık 1.600'den fazla ARTEX konsolu sayıldı. Geliştirici kodu 8 Ekim'de GitHub'dan kaldırdı, ancak kopyaları ve ücretli sürümü dolaşımda.",
-      "category": "siber",
-      "region": "dunya",
-      "source": "Cyber Security News (FBI FLASH-20261113-001)",
-      "url": "https://cybersecuritynews.com/fbi-reveals-hackers-artex-ai-usage/",
-      "date": "2026-11-13"
-    },
-    {
-      "title": "ABD, Binance soygununda 1,2 milyar dolarlık kripto için el koyma kararı aldı; deepfake'li FaceStealer altyapısı çökertildi",
-      "summary": "ABD Adalet Bakanlığı 12 Kasım'da, 29 Ekim'deki 6 milyar doları aşan Binance soygununda çalınan varlıkların 1,2 milyar dolardan fazlası için el koyma ve dondurma kararı çıkarıldığını duyurdu; saldırı Kuzey Kore bağlantılı TraderTraitor grubuna atfediliyor. Aynı duyuruda, ele geçirilmiş görüntülü toplantı hesapları, deepfake videolar ve \"teknik düzeltme\" kılığındaki zararlı yazılımla 18 ayda 400 milyon dolardan fazla kripto çalan FaceStealer kampanyasının bulut altyapısına da el konuldu. Görüntülü görüşmedeki tanıdık yüzün artık tek başına doğrulama sayılamayacağının somut örneği.",
-      "category": "fraud",
-      "region": "dunya",
-      "source": "Bitcoin.com News (ABD Adalet Bakanlığı duyurusu)",
-      "url": "https://news.bitcoin.com/regulation-and-legal/this-week-in-crypto-law-november-15-2026",
-      "date": "2026-11-12"
-    },
-    {
-      "title": "OpenAI, yapay zekâ ajanlarına ödeme yaptıran ChatGPT Wallet'ı başlattı",
-      "summary": "OpenAI 13 Kasım'da, ajanların kullanıcının gerçek kart numarasını görmeden alışveriş ödemesi yapabildiği ChatGPT Wallet'ı American Express, Mastercard ve Visa iş birliğiyle duyurdu. Ödemeler tek kullanımlık ağ token'larıyla yapılıyor ve her alışveriş için Face ID gibi bir güvenlik onayı gerekiyor; ilk aşamada yalnızca ABD'deki ChatGPT Pro abonelerine açık. İleride harcama limiti gibi koşullarla ön onay planlanıyor; bu da ajan kaynaklı işlemlerde yetki, itiraz ve fraud kontrolü sorularını bankaların gündemine taşıyor.",
+      "title": "OpenAI, yapay zekâ ajanlarının kullanıcı adına ödeme yaptığı ChatGPT Wallet'ı başlattı",
+      "summary": "Klasik e-ticarette kart bilgisini kullanıcı kendisi satıcının ödeme sayfasına girer; 13 Kasım'da duyurulan ChatGPT Wallet'ta ise kart cüzdana bir kez eklenir, ürünü yapay zekâ ajanı seçer ve ödemeyi kullanıcı adına ajan başlatır. Kullanıcı sepeti, tutarı ve kartı görüp Face ID veya parmak iziyle onaylar; ödeme American Express, Mastercard ve Visa'nın tek kullanımlık ağ token'ıyla geçer, yani kart numarasını ne ajan ne satıcı görür ve satıcı işlemi mevcut altyapısıyla alır. Şimdilik yalnızca ABD'deki Pro abonelerine açık, kart ödülleri ve itiraz hakkı korunuyor; ileride harcama limitiyle ön onay planlandığı için ajanın yaptığı işlemde yetkinin kimde olduğu ve fraud kontrolünün nasıl işleyeceği bankalar açısından açık soru.",
       "category": "ai",
       "region": "dunya",
-      "source": "OpenAI",
-      "url": "https://openai.com/index/introducing-chatgpt-wallet/",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
       "date": "2026-11-13"
     },
     {
-      "title": "İçişleri: 12 ilde siber suç operasyonunda 167 gözaltı, 32 tutuklama",
-      "summary": "İçişleri Bakanlığı 16 Kasım'da, son beş günde 12 ilde yapılan operasyonlarda 167 şüphelinin yakalandığını, 32'sinin tutuklandığını ve 31'ine adli kontrol uygulandığını açıkladı. Şüpheliler sosyal medya ve oltalama siteleri üzerinden \"yüksek kazanç\", \"yatırım ücreti\" ve \"araç satışı\" temalarıyla dolandırıcılık yapmak, mobil bankacılık hesaplarına yetkisiz erişmek ve yasa dışı bahis oynatmakla suçlanıyor. Ayrıca 802 internet adresi için erişim engeli kararı verildi.",
-      "category": "fraud",
-      "region": "tr",
-      "source": "A Haber",
-      "url": "https://www.ahaber.com.tr/gundem/2026/11/16/12-ilde-siber-suc-operasyonu-167-supheli-yakalandi",
-      "date": "2026-11-16"
-    },
-    {
-      "title": "Microsoft yaklaşık 1.100 açığı kapattı; Outlook'taki sıfırıncı gün aktif olarak istismar ediliyor",
-      "summary": "Microsoft 10 Kasım'daki Salı yamalarında 63'ü kritik yaklaşık 1.100 güvenlik açığını kapattı ve üst üste ikinci ay dört haneli sayıya ulaştı. Aktif olarak istismar edilen tek açık, Outlook'ta NTLM kimlik bilgisi özetlerini sızdırabilen CVE-2026-124194. Uzmanlar ayrıca Exchange üzerinden erişilebilen Windows Search (CVE-2026-116928) ve Windows LDAP (CVE-2026-119958) uzaktan kod çalıştırma açıklarının öncelikli yamalanmasını öneriyor.",
-      "category": "siber",
-      "region": "dunya",
-      "source": "Dark Reading",
-      "url": "https://darkreading.com/vulnerabilities-threats/november-patch-tuesday-cornucopia-cves",
-      "date": "2026-11-10"
-    },
-    {
-      "title": "KVKK: DHL'in tedarikçisindeki ihlalde Türkiye'den 10.622 çalışanın verisi etkilendi",
-      "summary": "KVKK, DHL AG'nin bildirdiği veri ihlalini 12 Kasım'da duyurdu: çalışan anketleri için hizmet alınan tedarikçinin analiz ortamına yetkisiz erişim sağlandı ve Türkiye'deki 10.622 çalışanın kimlik, iletişim ve özlük verileri etkilendi. İhlal 2 Kasım'da tespit edildi; giriş noktası DHL'in kendi sistemleri değildi. Kasım başındaki Hepsiburada duyurusu gibi bu olay da ihlallerin veri işleyen tedarikçi tarafında yoğunlaştığını gösteriyor.",
-      "category": "siber",
-      "region": "tr",
-      "source": "ShiftDelete.Net (KVKK duyurusu)",
-      "url": "https://shiftdelete.net/dhl-veri-ihlali-kvkk-10622-calisan",
-      "date": "2026-11-12"
-    },
-    {
-      "title": "Payments Association: Yapay zekâ destekli fraud, kurumların yanıt hızını en çok aşan risk",
-      "summary": "İngiltere merkezli The Payments Association'ın 16 Kasım'da yayımlanan Financial Crime Landscape 2026/27 raporunda, konferans anketlerindeki yanıtların %56'sı yapay zekâ destekli dolandırıcılığı kurumların yetişmekte en çok zorlandığı risk olarak gösterdi. 100 üst düzey finansal suç yöneticisiyle yapılan ankette %41, sektörde yapay zekâ yönetişimi için pratik rehber eksikliği olduğunu söyledi. Rapor, ajanların başlattığı ödemelerdeki itirazlar için düzenleyici netlik istiyor ve kurumlar arası gerçek zamanlı veri paylaşımını öne çıkarıyor.",
+      "title": "Payments Association: Yapay zekâ destekli fraud, kurumların en zor yetiştiği risk",
+      "summary": "Yapay zekâ destekli fraud, dolandırıcının ses ve görüntü klonlama (deepfake), sahte belge ve sentetik kimlik üretimi ya da kişiye özel oltalama mesajlarını üretken yapay zekâyla ucuz ve seri biçimde yapması anlamına geliyor. İngiltere merkezli The Payments Association'ın 16 Kasım'da yayımlanan raporunda, konferans anketlerindeki yanıtların %56'sı bunu kurumların yanıt hızını en çok aşan risk olarak gösterdi; yöneticilerin %41'i de kendi kullandıkları yapay zekâyı yönetmek için pratik rehber bulunmadığını söyledi. Rapor, fraud kontrolündeki her yapay zekâ sistemine sorumlu bir sahip atanmasını, kaçırılan fraud ile haksız yere engellenen ödemelerin birlikte izlenmesini ve ajanların başlattığı ödemelerdeki itirazlar için kural netliği öneriyor.",
       "category": "fraud",
       "region": "dunya",
       "source": "The Paypers",
@@ -67,8 +21,56 @@
       "date": "2026-11-16"
     },
     {
+      "title": "Görüntülü görüşmedeki tanıdık yüz kayıttan oynatılıyor: Kuzey Kore'nin FaceStealer yöntemi ve Binance soygunu",
+      "summary": "ABD Adalet Bakanlığı 12 Kasım'da, bir DevOps mühendisinin ele geçirilen bilgisayarı üzerinden sıcak cüzdanlara ulaşılarak 29 Ekim'de yapılan yaklaşık 6,3 milyar dolarlık Binance soygununda 2,7 milyar doların dondurulduğunu, 1,2 milyar dolar için el koyma kararı alındığını duyurdu. Aynı duyuruda anlatılan FaceStealer yönteminde saldırgan, ele geçirdiği gerçek bir hesaptan sahte Zoom veya Teams daveti gönderiyor, toplantıda önceki kurbanlardan gizlice kaydedilmiş kamera görüntülerini ve deepfake videoları oynatarak tanıdık biri varmış izlenimi veriyor, ardından \"sesiniz gelmiyor\" deyip düzeltme diye zararlı yazılım kurduran bir bağlantı veriyor. Bu arada yeni kurbanın kamerası da kaydedilip sonraki hedefte kullanılıyor; FBI daveti ayrı bir kanaldan teyit etmeyi ve görüşme sırasında önerilen hiçbir güncelleme, betik veya komutu çalıştırmamayı öneriyor.",
+      "category": "fraud",
+      "region": "dunya",
+      "source": "FinanceX Magazine (ABD Adalet Bakanlığı ve FBI duyurusu)",
+      "url": "https://www.financexmagazine.com/post/north-korea-crypto-theft-us-seizes-1-2bn-flags-deepfake-scam",
+      "date": "2026-11-12"
+    },
+    {
+      "title": "FBI: Yapay zekâ ajanlı ARTEX aracı sızma süresini üç saatin altına indirdi",
+      "summary": "FBI'ın 13 Kasım tarihli uyarısına göre, açık kaynaklı sızma testi aracı ARTEX'te dil modeliyle çalışan ajanlar keşif, sızma, yetki yükseltme ve veri çıkarma adımlarını neredeyse insansız yürütüyor; bazı vakalarda ilk temastan yönetici yetkisine üç saatten kısa sürede ulaşıldı. Saldırılarda sıfırıncı gün açığı yok: araç tedarikçi portalları, mobil arka uçlar ve açıkta kalmış yönetim arayüzleri gibi gözden kaçan sistemleri bulup çalıntı VPN ve tedarikçi parolalarını, API yetkilendirme hatalarını ve bulut izinlerini zincirliyor; Güney Kore'de finans kuruluşlarından yaklaşık 67.000 kişinin verisi bu yolla çalındı. FBI, internete açık tüm uygulamaların envanterini, yönetim arayüzlerinin güvenilir ağlarla sınırlanmasını, kritik API'lere hız ve işlem limiti konmasını ve kod depolarının gömülü parolalara karşı taranmasını öneriyor.",
+      "category": "siber",
+      "region": "dunya",
+      "source": "OODA Loop (FBI FLASH-20261113-001)",
+      "url": "https://oodaloop.com/analysis/ooda-original/fbi-flash-on-artex-agentic-ai-hacking-frameworks-move-from-pen-testing-tool-to-mainstream-threat/",
+      "date": "2026-11-13"
+    },
+    {
+      "title": "Sosyal medya ve oltalama siteleriyle yatırım ve araç satışı dolandırıcılığı: 12 ilde operasyon",
+      "summary": "İçişleri Bakanlığı'nın 16 Kasım'da duyurduğu operasyonlarda hedef alınan gruplar, sosyal medya ve oltalama siteleri üzerinden \"yüksek kazanç\" vaadi, peşin istenen \"yatırım ücreti\" ve sahte araç satışı ilanlarıyla para topluyordu. Aynı gruplar vatandaşların mobil bankacılık ve oyun hesaplarına yetkisiz erişim sağlamak, yasa dışı bahis oynatmak ve bu sitelerin reklamını yapmakla da suçlanıyor. Tespit, Emniyet Siber Suçlarla Mücadele Daire Başkanlığı ile MASAK'ın ortak çalışmasına ve yapay zekâ destekli sanal devriyeye dayanıyor; 802 internet adresi için erişim engeli kararı verildi.",
+      "category": "fraud",
+      "region": "tr",
+      "source": "A Haber",
+      "url": "https://www.ahaber.com.tr/gundem/2026/11/16/12-ilde-siber-suc-operasyonu-167-supheli-yakalandi",
+      "date": "2026-11-16"
+    },
+    {
+      "title": "Onay oltalaması: Kripto cüzdanı tek tıkla boşaltan yöntem ve ABD–Kanada'nın erken uyarı operasyonu",
+      "summary": "Onay oltalamasında (approval phishing) dolandırıcı, güvenilir bir uygulamadan geliyormuş gibi görünen sahte bir açılır pencere veya uyarıyla kullanıcıdan cüzdanına erişim izni istiyor; izin verildiği anda parola çalmaya gerek kalmadan cüzdanın tam kontrolünü alıp varlıkları aktarıyor. Ontario Menkul Kıymetler Komisyonu'nun 16 Kasım'da duyurduğu Niagara Operasyonu'nda ABD Gizli Servisi, Kanada polisi ve Chainalysis, TRM Labs, Elliptic gibi analiz şirketleri bu kötü niyetli izinleri blokzincir üzerinde tespit ediyor ve erişimi çalınmış ama parası henüz çekilmemiş kişilere önceden ulaşmayı hedefliyor. Kullanıcı için ders, beklenmedik bir izin veya \"cüzdanını doğrula\" isteğini onaylamamak ve eski izinleri iptal etmek; bankalar için ise müşteri para kaybetmeden uyarmanın mümkün olduğunu gösteren bir model.",
+      "category": "fraud",
+      "region": "dunya",
+      "source": "Investment Executive (OSC duyurusu)",
+      "url": "https://www.investmentexecutive.com/news/cross-border-anti-fraud-op-targets-approval-phishing/",
+      "date": "2026-11-16"
+    },
+    {
+      "title": "Microsoft haftası: Outlook'ta kimlik bilgisi sızdıran açık ve 74 ülkeyi etkileyen kesinti",
+      "summary": "Outlook'taki CVE-2026-124194 açığı, saldırganın kullanıcının Windows kimlik bilgisi özetini (NTLM) ele geçirmesine izin veriyordu ve yama çıkmadan önce sahada kullanılıyordu; Microsoft açığı 10 Kasım'da kapattı. Active Directory ve Exchange'e yoğun bağımlı banka ağlarında çalınan özet iç sistemlerde yetkili oturum açmaya kadar gidebildiği için Office güncellemesi ile aynı pakette kapatılan Windows Search ve LDAP uzaktan kod çalıştırma açıkları öncelikli. Ayrıca 12 Kasım'da başlayan ve bir günden uzun süren Microsoft 365 kesintisi Outlook, Teams ve Copilot'u 74 ülkede erişilmez kıldı; Microsoft nedenin siber saldırı değil, altyapıdaki zincirleme sunucu arızası olduğunu açıkladı.",
+      "category": "siber",
+      "region": "dunya",
+      "source": "Dark Reading",
+      "url": "https://darkreading.com/vulnerabilities-threats/november-patch-tuesday-cornucopia-cves",
+      "more": [
+        { "source": "Malwarebytes (kesinti)", "url": "https://www.malwarebytes.com/blog/news/2026/11/worldwide-microsoft-365-outage-disrupts-outlook-sharepoint-teams-and-more" }
+      ],
+      "date": "2026-11-10"
+    },
+    {
       "title": "Anthropic, Claude Fable 5.2 ve Mythos 5.2'yi yayımladı",
-      "summary": "Anthropic 9 Kasım'da aynı temel modeli paylaşan iki sürüm çıkardı: Fable 5.2 siber güvenlik ve biyoloji korumalarıyla herkese açık, Mythos 5.2 ise yalnızca doğrulanmış siber güvenlik ve yaşam bilimleri kuruluşlarına veriliyor. Fiyat milyon girdi token'ı başına 8, çıktı için 40 dolar; şirket çıktının önceki sürüme göre %30'a kadar hızlandığını söylüyor. En yetenekli modelin korumasız hâlinin yalnızca doğrulanmış kurumlara verilmesi, siber yeteneklerin ulaştığı seviyenin göstergesi.",
+      "summary": "Anthropic 9 Kasım'da aynı temel modeli paylaşan iki sürüm çıkardı: Fable 5.2 siber güvenlik ve biyoloji korumalarıyla herkese açık, Mythos 5.2 ise yalnızca doğrulanmış siber güvenlik ve yaşam bilimleri kuruluşlarına veriliyor. Önceki 5.1 sürümüne göre kodlama, akıl yürütme ve görsel anlama gelişti, çıktı %30'a kadar hızlandı ve Fable'ın gereksiz yere engellediği istekler yaklaşık %55 azaldı; Mythos, şirketin zafiyet bulma testinde 5.1'den %14,4 daha fazla açık yakaladı. En yetenekli modelin korumasız hâlinin yalnızca doğrulanmış kurumlara verilmesi, siber yeteneklerin ulaştığı seviyenin göstergesi.",
       "category": "ai",
       "region": "dunya",
       "source": "Anthropic",
@@ -77,7 +79,7 @@
     },
     {
       "title": "Google, en güçlü modeli Gemini 4 Carbon'u genel kullanıma açtı",
-      "summary": "Google, Gemini 4 Carbon'u 10 Kasım'da ücretli geliştiricilere, kurumlara ve AI Ultra abonelerine açtı; model iki hafta önce yalnızca siber savunma ekiplerine verilmişti. Tanıtım fiyatı milyon girdi token'ı başına 2, çıktı için 10 dolar ve 30 Kasım'dan sonra iki katına çıkacak. 12 Kasım'da günlük kodlama ve ajan işleri için daha hızlı Gemini 4 Hydrogen de genel kullanıma sunuldu.",
+      "summary": "Google, iki hafta önce yalnızca siber savunma ekiplerine verdiği Gemini 4 Carbon'u 10 Kasım'da ücretli geliştiricilere, kurumlara ve AI Ultra abonelerine açtı. Bir önceki model Argon'a göre farkı, çok adımlı hata ayıklama ve açık uçlu araştırma gibi uzun işleri daha fazla akıl yürütüp kendi sonucunu doğrulayarak yürütmesi; yeni /swarm özelliği tek bir komutu birlikte çalışan ajan ekibine dönüştürüyor. Google'ın kendi testlerinde siber saldırı amaçlı kötüye kullanım denemelerinde başarı oranı Argon'daki %3,1'den %0,8'e indi; 12 Kasım'da daha hızlı ve ucuz Gemini 4 Hydrogen de yayımlandı.",
       "category": "ai",
       "region": "dunya",
       "source": "Google",
@@ -85,13 +87,13 @@
       "date": "2026-11-10"
     },
     {
-      "title": "ABD ve Kanada'dan kripto dolandırıcılığına karşı ortak Niagara Operasyonu",
-      "summary": "Ontario Menkul Kıymetler Komisyonu 16 Kasım'da, ABD Gizli Servisi, Kanada polis teşkilatları ve eyalet düzenleyicilerinin katıldığı, örgütlü kripto dolandırıcılığına karşı ortak Niagara Operasyonu'nu duyurdu. Operasyonun farkı, dolandırıcıların hedef aldığı kişileri neredeyse gerçek zamanlı tespit edip daha fazla para kaybetmeden önce devreye girmeyi amaçlaması. Hedeflenen ağ sayısı ve tutarlar açıklanmadı.",
-      "category": "fraud",
-      "region": "dunya",
-      "source": "U.Today (OSC duyurusu)",
-      "url": "https://u.today/us-and-canada-announce-massive-crypto-fraud-crackdown",
-      "date": "2026-11-16"
+      "title": "KVKK: DHL'in tedarikçisindeki ihlalde Türkiye'den 10.622 çalışanın verisi etkilendi",
+      "summary": "KVKK'nın 12 Kasım'da duyurduğu ihlalde, DHL'in çalışan anketleri için hizmet aldığı tedarikçinin sistemine yetkisiz erişildi ve Türkiye'deki 10.622 çalışanın kimlik, iletişim ve özlük verileri etkilendi. DHL'in kendi sistemlerine girilmedi; ihlal tedarikçi tarafında gerçekleşti.",
+      "category": "siber",
+      "region": "tr",
+      "source": "ShiftDelete.Net (KVKK duyurusu)",
+      "url": "https://shiftdelete.net/dhl-veri-ihlali-kvkk-10622-calisan",
+      "date": "2026-11-12"
     }
   ]
 }

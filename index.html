@@ -27,7 +27,6 @@
                   border-radius: 999px; padding: 6px 14px; cursor: pointer; }
   .chips { display: flex; flex-wrap: wrap; gap: 6px; }
   .chip[aria-pressed="true"] { background: var(--accent); color: var(--bg); border-color: var(--accent); }
-  .theme { margin: 22px 0 6px; font-style: italic; color: var(--muted); }
   ol { list-style: none; padding: 0; margin: 0; }
   li.item { display: grid; grid-template-columns: 44px 1fr; gap: 6px 14px; padding: 24px 0; border-bottom: 1px solid var(--line); }
   .num { font-size: 1.7rem; line-height: 1.1; color: var(--muted); font-variant-numeric: tabular-nums; }
@@ -48,7 +47,6 @@
 <div class="wrap">
   <header>
     <h1>Fraud & Teknoloji Bülteni</h1>
-    <p>Dünyadan ve Türkiye'den haftanın en önemli 10 haberi. Her biri en fazla üç cümle.</p>
   </header>
 
   <div class="bar">
@@ -62,7 +60,6 @@
     </div>
   </div>
 
-  <p class="theme" id="theme"></p>
   <ol id="list"></ol>
 
   <footer>
@@ -85,7 +82,6 @@ function fmt(d) {
 function render() {
   const list = $("list");
   list.textContent = "";
-  $("theme").textContent = current.theme || "";
   const items = current.items
     .map((it, i) => ({ ...it, n: i + 1 }))
     .filter((it) => filter === "all" || it.category === filter || it.region === filter);
@@ -109,6 +105,10 @@ function render() {
     const meta = document.createElement("div"); meta.className = "meta";
     const a = document.createElement("a"); a.href = it.url; a.target = "_blank"; a.rel = "noopener"; a.textContent = it.source;
     meta.append(fmt(it.date) + " · Kaynak: ", a);
+    for (const m of it.more || []) {
+      const b = document.createElement("a"); b.href = m.url; b.target = "_blank"; b.rel = "noopener"; b.textContent = m.source;
+      meta.append(", ", b);
+    }
     body.append(tags, h, p, meta);
     li.append(num, body);
     list.append(li);
