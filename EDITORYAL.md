@@ -7,7 +7,8 @@ Haftalık sayı hazırlanırken uyulacak kurallar. Okuyucu bankacılık ve ödem
 - Ardından yeni dolandırıcılık ve saldırı yöntemleri, sonra siber güvenlik olayları, en sonda rutin veri ihlali duyuruları.
 
 ## Özet nasıl yazılır
-- En fazla 3 cümle. Türkçe.
+- En fazla 4 satır: 4 kısa cümleyi ve yaklaşık 400 karakteri geçme. Türkçe. (16 Kasım 2026 sayısı bu kuraldan önce yazıldı ve daha uzun; örnek alma.)
+- Uzun, virgüllerle zincirlenmiş cümle kurma. Sığmayan ayrıntıyı at; okuyucu kaynağa gidebilir.
 - "Kim, kaç kişi, kaç para" yerine "nasıl yapılıyor, nasıl tespit edildi, kullanıcı ve banka neye dikkat etmeli" sorularına ağırlık ver.
 - Gözaltı ve tutuklama sayıları, el konulan altyapı ayrıntıları, açıkta kalan sunucu sayısı gibi yan bilgileri yazma.
 - Terim ilk geçtiğinde kısaca açıkla (ör. "yapay zekâ destekli fraud", "onay oltalaması").

@@ -1,6 +1,6 @@
 # Fraud & Teknoloji Bülteni
 
-Dünyadan ve Türkiye'den haftanın en önemli 10 fraud, siber güvenlik ve AI/teknoloji haberi. Her haber en fazla üç cümlede Türkçe özetlenir. Her Pazartesi akşamı güncellenir.
+Dünyadan ve Türkiye'den haftanın en önemli 10 fraud, siber güvenlik ve AI/teknoloji haberi. Her haber en fazla dört satırda Türkçe özetlenir. Her Pazartesi akşamı güncellenir.
 
 ## Yapı
 
@@ -19,7 +19,7 @@ Dünyadan ve Türkiye'den haftanın en önemli 10 fraud, siber güvenlik ve AI/t
   "items": [
     {
       "title": "Türkçe başlık",
-      "summary": "En fazla 3 cümle.",
+      "summary": "En fazla 4 kısa cümle, yaklaşık 400 karakter.",
       "category": "fraud | siber | ai",
       "region": "tr | dunya",
       "source": "Kaynak adı",
