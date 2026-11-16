@@ -1,0 +1,38 @@
+# Kaynak listesi
+
+Haftalık taramada bakılan kaynaklar. Liste başlangıç noktasıdır; web aramasıyla bulunan başka güvenilir kaynaklar da kullanılır. Eklemek veya çıkarmak istediklerinizi bu dosyada değiştirin.
+
+## Türkiye
+- KVKK veri ihlali bildirimleri: https://www.kvkk.gov.tr/veri-ihlali-bildirimi
+- USOM (Ulusal Siber Olaylara Müdahale Merkezi): https://www.usom.gov.tr/
+- Siber Güvenlik Başkanlığı, BTK, BDDK, TCMB, MASAK, SPK duyuruları
+- İçişleri Bakanlığı ve Emniyet siber suç operasyon açıklamaları (AA, DHA üzerinden)
+- BKM: https://bkm.com.tr/
+- Teknoloji basını: ShiftDelete, Webrazzi, LOG, Chip Online
+
+## Dünya: fraud ve ödemeler
+- Finextra (payments, crime, security): https://www.finextra.com/
+- The Paypers (fraud & fincrime): https://thepaypers.com/
+- PYMNTS (fraud prevention, cybersecurity)
+- Merchant Risk Council
+- Düzenleyiciler ve kolluk: ABD Adalet Bakanlığı, FBI/IC3, Europol, UK PSR/FCA, ECB/EBA, FTC
+
+## Dünya: siber güvenlik
+- BleepingComputer, The Record, KrebsOnSecurity, Dark Reading, SecurityWeek, The Hacker News
+- CISA KEV kataloğu ve uyarıları
+
+## Dünya: AI ve teknoloji
+- Birincil duyurular: OpenAI, Anthropic, Google, Meta, Microsoft
+- Ödeme ağları: Visa, Mastercard
+- TechCrunch, Reuters teknoloji
+
+## X (Twitter) ve sosyal medya
+X akışları giriş gerektirdiği için düzenli taranamaz. Aramada veya haberlerde karşıma çıkan gönderiler yalnızca ipucu olarak kullanılır; bültene giren her haber birincil kaynaktan veya güvenilir bir yayından doğrulanır.
+
+## Seçim ölçütleri
+1. Etki: kaç kişi/kurum, ne kadar para, ne kadar yaygın.
+2. Yenilik: yeni yöntem, yeni düzenleme, yeni teknoloji.
+3. İlgililik: Türkiye, bankacılık ve ödeme sistemleri açısından anlamı.
+4. Güvenilirlik: birincil kaynak veya saygın yayın; tek kaynaklı iddialar alınmaz.
+
+Kota (esnek): yaklaşık 4 fraud, 3 siber güvenlik, 3 AI/teknoloji; en az 2-3 Türkiye haberi.

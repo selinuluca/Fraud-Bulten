@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fraud & Teknoloji Bülteni</title>
+<meta name="description" content="Dünyadan ve Türkiye'den haftanın en önemli 10 fraud, siber güvenlik ve yapay zekâ haberi; her biri en fazla üç cümlede.">
+<style>
+  :root {
+    --bg: #f6f4ef; --card: #ffffff; --ink: #1c1b19; --muted: #6b6760; --line: #e3dfd6;
+    --fraud: #b3261e; --siber: #1f5fa8; --ai: #2f7d4f; --accent: #1c1b19;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #15151a; --card: #1e1e25; --ink: #ecebe6; --muted: #9a978f; --line: #2e2e38;
+            --fraud: #ff8a80; --siber: #82b6f5; --ai: #7fd3a0; --accent: #ecebe6; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 17px/1.6 Georgia, "Iowan Old Style", "Times New Roman", serif; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 40px 20px 64px; }
+  header h1 { font-size: 2rem; line-height: 1.15; margin: 0 0 6px; letter-spacing: -0.01em; }
+  header p { margin: 0; color: var(--muted); font-family: system-ui, sans-serif; font-size: 0.92rem; }
+  .bar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between;
+         margin: 28px 0 8px; padding: 14px 0; border-top: 2px solid var(--accent); border-bottom: 1px solid var(--line);
+         font-family: system-ui, sans-serif; font-size: 0.9rem; }
+  select, .chip { font: inherit; color: var(--ink); background: var(--card); border: 1px solid var(--line);
+                  border-radius: 999px; padding: 6px 14px; cursor: pointer; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip[aria-pressed="true"] { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+  .theme { margin: 22px 0 6px; font-style: italic; color: var(--muted); }
+  ol { list-style: none; padding: 0; margin: 0; }
+  li.item { display: grid; grid-template-columns: 44px 1fr; gap: 6px 14px; padding: 24px 0; border-bottom: 1px solid var(--line); }
+  .num { font-size: 1.7rem; line-height: 1.1; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .tags { font-family: system-ui, sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; }
+  .tags span + span::before { content: " · "; color: var(--muted); }
+  .fraud { color: var(--fraud); } .siber { color: var(--siber); } .ai { color: var(--ai); }
+  .region { color: var(--muted); }
+  h2 { font-size: 1.22rem; line-height: 1.3; margin: 4px 0 8px; }
+  .item p { margin: 0 0 10px; }
+  .meta { font-family: system-ui, sans-serif; font-size: 0.85rem; color: var(--muted); }
+  a { color: inherit; text-underline-offset: 3px; }
+  .meta a { color: var(--ink); }
+  footer { margin-top: 36px; font-family: system-ui, sans-serif; font-size: 0.82rem; color: var(--muted); }
+  .empty { padding: 32px 0; color: var(--muted); font-family: system-ui, sans-serif; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Fraud & Teknoloji Bülteni</h1>
+    <p>Dünyadan ve Türkiye'den haftanın en önemli 10 haberi. Her biri en fazla üç cümle.</p>
+  </header>
+
+  <div class="bar">
+    <label>Hafta: <select id="issue" aria-label="Hafta seç"></select></label>
+    <div class="chips" id="chips" role="group" aria-label="Filtre">
+      <button class="chip" data-f="all" aria-pressed="true">Tümü</button>
+      <button class="chip" data-f="fraud" aria-pressed="false">Fraud</button>
+      <button class="chip" data-f="siber" aria-pressed="false">Siber güvenlik</button>
+      <button class="chip" data-f="ai" aria-pressed="false">AI / Teknoloji</button>
+      <button class="chip" data-f="tr" aria-pressed="false">Türkiye</button>
+    </div>
+  </div>
+
+  <p class="theme" id="theme"></p>
+  <ol id="list"></ol>
+
+  <footer>
+    Her Pazartesi akşamı güncellenir. Özetler Claude tarafından kaynak haberler okunarak yazılır;
+    ayrıntı ve doğrulama için kaynak bağlantısını kullanın.
+  </footer>
+</div>
+
+<script>
+const CAT = { fraud: "Fraud", siber: "Siber güvenlik", ai: "AI / Teknoloji" };
+const REG = { tr: "Türkiye", dunya: "Dünya" };
+const $ = (id) => document.getElementById(id);
+let current = null, filter = "all";
+
+function fmt(d) {
+  const [y, m, g] = d.split("-").map(Number);
+  return new Date(y, m - 1, g).toLocaleDateString("tr-TR", { day: "numeric", month: "long" });
+}
+
+function render() {
+  const list = $("list");
+  list.textContent = "";
+  $("theme").textContent = current.theme || "";
+  const items = current.items
+    .map((it, i) => ({ ...it, n: i + 1 }))
+    .filter((it) => filter === "all" || it.category === filter || it.region === filter);
+  if (!items.length) {
+    const p = document.createElement("p");
+    p.className = "empty";
+    p.textContent = "Bu hafta bu filtreye uyan haber yok.";
+    list.append(p);
+    return;
+  }
+  for (const it of items) {
+    const li = document.createElement("li"); li.className = "item";
+    const num = document.createElement("div"); num.className = "num"; num.textContent = String(it.n).padStart(2, "0");
+    const body = document.createElement("div");
+    const tags = document.createElement("div"); tags.className = "tags";
+    const c = document.createElement("span"); c.className = it.category; c.textContent = CAT[it.category] || it.category;
+    const r = document.createElement("span"); r.className = "region"; r.textContent = REG[it.region] || it.region;
+    tags.append(c, r);
+    const h = document.createElement("h2"); h.textContent = it.title;
+    const p = document.createElement("p"); p.textContent = it.summary;
+    const meta = document.createElement("div"); meta.className = "meta";
+    const a = document.createElement("a"); a.href = it.url; a.target = "_blank"; a.rel = "noopener"; a.textContent = it.source;
+    meta.append(fmt(it.date) + " · Kaynak: ", a);
+    body.append(tags, h, p, meta);
+    li.append(num, body);
+    list.append(li);
+  }
+}
+
+async function loadIssue(file) {
+  current = window.__ISSUES__ ? window.__ISSUES__[file] : await (await fetch("data/" + file)).json();
+  render();
+}
+
+async function init() {
+  try {
+    const idx = window.__INDEX__ || await (await fetch("data/index.json")).json();
+    const sel = $("issue");
+    for (const is of idx.issues) {
+      const o = document.createElement("option"); o.value = is.file; o.textContent = is.label; sel.append(o);
+    }
+    sel.addEventListener("change", () => loadIssue(sel.value));
+    $("chips").addEventListener("click", (e) => {
+      const b = e.target.closest(".chip"); if (!b) return;
+      filter = b.dataset.f;
+      for (const x of $("chips").children) x.setAttribute("aria-pressed", x === b ? "true" : "false");
+      render();
+    });
+    await loadIssue(idx.issues[0].file);
+  } catch (err) {
+    $("list").innerHTML = '<p class="empty">Bülten yüklenemedi. Lütfen daha sonra tekrar deneyin.</p>';
+  }
+}
+init();
+</script>
+</body>
+</html>
