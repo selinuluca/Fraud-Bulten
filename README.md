@@ -9,6 +9,7 @@ Dünyadan ve Türkiye'den haftanın en önemli 10 fraud, siber güvenlik ve AI/t
 - `data/YYYY-AA-GG.json`: o haftanın 10 haberi (yayın tarihiyle adlandırılır).
 - `kaynaklar.md`: taranan kaynaklar ve seçim ölçütleri.
 - `EDITORYAL.md`: haber seçimi ve özet yazımı için yayın ilkeleri.
+- `PROMPT.md`: projeyi başka bir Claude hesabında sürdürmek için tam prompt.
 
 ## Haftalık dosya biçimi
 
