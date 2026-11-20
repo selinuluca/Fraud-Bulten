@@ -9,6 +9,7 @@
       "region": "dunya",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
+      "read_min": 3,
       "date": "2026-11-13"
     },
     {
@@ -18,6 +19,7 @@
       "region": "dunya",
       "source": "The Paypers",
       "url": "https://thepaypers.com/fraud-and-fincrime/news/payments-association-report-finds-ai-enabled-fraud-top-rising-risk",
+      "read_min": 5,
       "date": "2026-11-16"
     },
     {
@@ -36,6 +38,7 @@
       "region": "dunya",
       "source": "OODA Loop (FBI FLASH-20261113-001)",
       "url": "https://oodaloop.com/analysis/ooda-original/fbi-flash-on-artex-agentic-ai-hacking-frameworks-move-from-pen-testing-tool-to-mainstream-threat/",
+      "read_min": 14,
       "date": "2026-11-13"
     },
     {
@@ -54,6 +57,7 @@
       "region": "dunya",
       "source": "Investment Executive (OSC duyurusu)",
       "url": "https://www.investmentexecutive.com/news/cross-border-anti-fraud-op-targets-approval-phishing/",
+      "read_min": 2,
       "date": "2026-11-16"
     },
     {
@@ -63,8 +67,12 @@
       "region": "dunya",
       "source": "Dark Reading",
       "url": "https://darkreading.com/vulnerabilities-threats/november-patch-tuesday-cornucopia-cves",
+      "read_min": 4,
       "more": [
-        { "source": "Malwarebytes (kesinti)", "url": "https://www.malwarebytes.com/blog/news/2026/11/worldwide-microsoft-365-outage-disrupts-outlook-sharepoint-teams-and-more" }
+        {
+          "source": "Malwarebytes (kesinti)",
+          "url": "https://www.malwarebytes.com/blog/news/2026/11/worldwide-microsoft-365-outage-disrupts-outlook-sharepoint-teams-and-more"
+        }
       ],
       "date": "2026-11-10"
     },
@@ -75,6 +83,7 @@
       "region": "dunya",
       "source": "Anthropic",
       "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "read_min": 23,
       "date": "2026-11-09"
     },
     {
@@ -84,6 +93,7 @@
       "region": "dunya",
       "source": "Google",
       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+      "read_min": 10,
       "date": "2026-11-10"
     },
     {

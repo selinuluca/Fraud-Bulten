@@ -10,6 +10,12 @@ Haftalık taramada bakılan kaynaklar. Liste başlangıç noktasıdır; web aram
 - BKM: https://bkm.com.tr/
 - Teknoloji basını: ShiftDelete, Webrazzi, LOG, Chip Online
 
+## Bankacılığın geleceği (öncelikli)
+- TCMB ödeme sistemleri duyuruları (FAST, TR Karekod vb.), BKM, Türkiye Bankalar Birliği
+- Türk bankalarının yeni kanal, ödeme ve fraud önleme ürünü duyuruları (yalnızca bu tür duyurular; ödül, sponsorluk, finansal sonuç haberleri alınmaz)
+- Finextra, The Financial Brand, Payments Dive, American Banker, Webrazzi Fintech
+- Visa, Mastercard ve büyük bankaların inovasyon duyuruları; EPI/wero, Pix, UPI gibi yeni ödeme sistemleri
+
 ## Dünya: fraud ve ödemeler
 - Finextra (payments, crime, security): https://www.finextra.com/
 - The Paypers (fraud & fincrime): https://thepaypers.com/
@@ -35,4 +41,4 @@ X akışları giriş gerektirdiği için düzenli taranamaz. Aramada veya haberl
 3. İlgililik: Türkiye, bankacılık ve ödeme sistemleri açısından anlamı.
 4. Güvenilirlik: birincil kaynak veya saygın yayın; tek kaynaklı iddialar alınmaz.
 
-Kota (esnek): yaklaşık 4 fraud, 3 siber güvenlik, 3 AI/teknoloji; en az 2-3 Türkiye haberi.
+Sayı ve dağılım: sabit sayı yok, ölçütleri geçen her haber girer. Bankacılığın geleceği, ödeme teknolojileri ve fraud önleme ağırlıklı; Türkiye haberleri her hafta aranır (bulunabildiği kadar, tercihen en az 2-3).

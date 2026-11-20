@@ -40,6 +40,9 @@
   a { color: inherit; text-underline-offset: 3px; }
   .meta a { color: var(--ink); }
   footer { margin-top: 36px; font-family: system-ui, sans-serif; font-size: 0.82rem; color: var(--muted); }
+  .read { display: inline-block; margin: 0 0 10px; padding: 2px 10px; border: 1px solid var(--line); border-radius: 999px;
+          font-family: system-ui, sans-serif; font-size: 0.78rem; color: var(--muted); }
+  .stats { margin: 14px 0 0; font-family: system-ui, sans-serif; font-size: 0.85rem; color: var(--muted); }
   .empty { padding: 32px 0; color: var(--muted); font-family: system-ui, sans-serif; }
 </style>
 </head>
@@ -60,6 +63,7 @@
     </div>
   </div>
 
+  <p class="stats" id="stats"></p>
   <ol id="list"></ol>
 
   <footer>
@@ -69,6 +73,29 @@
 </div>
 
 <script>
+// Okunma/tıklanma sayacı (GoatCounter). Boşsa sayaç kapalı.
+// Açmak için: goatcounter.com'da hesap aç, kodunu buraya yaz (ör. "fraudbulten"),
+// GoatCounter ayarlarında "Allow adding visitor counts on your website" seçeneğini aç.
+const GOATCOUNTER = "";
+const GC = GOATCOUNTER ? "https://" + GOATCOUNTER + ".goatcounter.com" : "";
+if (GC) {
+  const s = document.createElement("script");
+  s.async = true; s.src = "//gc.zgo.at/count.js"; s.dataset.goatcounter = GC + "/count";
+  document.head.append(s);
+}
+async function gcCount(path) {
+  if (!GC) return null;
+  try {
+    const r = await fetch(GC + "/counter/" + encodeURIComponent(path) + ".json");
+    if (!r.ok) return null;
+    return (await r.json()).count;
+  } catch { return null; }
+}
+function gcEvent(path, title) {
+  try { if (window.goatcounter && window.goatcounter.count) window.goatcounter.count({ path, title, event: true }); } catch {}
+}
+const words = (t) => (t || "").trim().split(/\s+/).filter(Boolean).length;
+
 const CAT = { fraud: "Fraud", siber: "Siber güvenlik", ai: "AI / Teknoloji" };
 const REG = { tr: "Türkiye", dunya: "Dünya" };
 const $ = (id) => document.getElementById(id);
@@ -82,6 +109,11 @@ function fmt(d) {
 function render() {
   const list = $("list");
   list.textContent = "";
+  const all = current.items;
+  const sumMin = Math.max(1, Math.round(all.reduce((s, it) => s + words(it.title) + words(it.summary), 0) / 180));
+  const stats = $("stats");
+  stats.textContent = all.length + " haber · özetlerin tamamı yaklaşık " + sumMin + " dk";
+  gcCount(location.pathname).then((c) => { if (c) stats.textContent += " · sayfa " + c + " kez görüntülendi"; });
   const items = current.items
     .map((it, i) => ({ ...it, n: i + 1 }))
     .filter((it) => filter === "all" || it.category === filter || it.region === filter);
@@ -102,14 +134,24 @@ function render() {
     tags.append(c, r);
     const h = document.createElement("h2"); h.textContent = it.title;
     const p = document.createElement("p"); p.textContent = it.summary;
+    const extra = [];
+    if (it.read_min) {
+      const rd = document.createElement("div"); rd.className = "read";
+      rd.textContent = "⏱ Kaynak haber: " + it.read_min + " dk okuma";
+      extra.push(rd);
+    }
+    const ev = "tik/" + current.date + "/" + String(it.n).padStart(2, "0");
     const meta = document.createElement("div"); meta.className = "meta";
     const a = document.createElement("a"); a.href = it.url; a.target = "_blank"; a.rel = "noopener"; a.textContent = it.source;
+    a.addEventListener("click", () => gcEvent(ev, it.title));
     meta.append(fmt(it.date) + " · Kaynak: ", a);
     for (const m of it.more || []) {
       const b = document.createElement("a"); b.href = m.url; b.target = "_blank"; b.rel = "noopener"; b.textContent = m.source;
+      b.addEventListener("click", () => gcEvent(ev, it.title));
       meta.append(", ", b);
     }
-    body.append(tags, h, p, meta);
+    gcCount(ev).then((c) => { if (c) meta.append(" · " + c + " tıklama"); });
+    body.append(tags, h, p, ...extra, meta);
     li.append(num, body);
     list.append(li);
   }
