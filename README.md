@@ -26,6 +26,7 @@ Dünyadan ve Türkiye'den haftanın öne çıkan fraud, bankacılık ve ödeme t
       "source": "Kaynak adı",
       "url": "https://...",
       "read_min": 4,
+      "coverage": 12,
       "more": [{ "source": "İkinci kaynak (isteğe bağlı)", "url": "https://..." }],
       "date": "2026-11-13"
     }
@@ -33,7 +34,9 @@ Dünyadan ve Türkiye'den haftanın öne çıkan fraud, bankacılık ve ödeme t
 }
 ```
 
-`read_min` kaynak haberin tahmini okuma süresidir (dakika, isteğe bağlı).
+`read_min` kaynak haberin tahmini okuma süresidir (dakika). `coverage` haberin kaç farklı yayında yer aldığıdır (gündem etkisi). İkisi de isteğe bağlıdır.
+
+Okundu bilgisi: kaynak bağlantısına tıklanan veya "Okundu işaretle" ile işaretlenen haberler soluklaşır ve ✓ alır; "Okunmamış" filtresi yalnızca kalanları gösterir. Bilgi okuyucunun kendi tarayıcısında saklanır.
 
 Yeni hafta eklemek için: `data/` altına yeni dosyayı koyun ve `data/index.json` içindeki `issues` listesinin başına bir satır ekleyin.
 

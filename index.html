@@ -43,6 +43,12 @@
   .read { display: inline-block; margin: 0 0 10px; padding: 2px 10px; border: 1px solid var(--line); border-radius: 999px;
           font-family: system-ui, sans-serif; font-size: 0.78rem; color: var(--muted); }
   .stats { margin: 14px 0 0; font-family: system-ui, sans-serif; font-size: 0.85rem; color: var(--muted); }
+  .meta a:visited { color: #7b3fa0; }
+  li.item.done h2, li.item.done p { color: var(--muted); }
+  li.item.done .num::after { content: "✓"; display: block; font-size: 1rem; color: var(--ai); }
+  .mark { margin-left: 8px; font: inherit; font-size: 0.8rem; color: var(--muted); background: none; border: 1px solid var(--line);
+          border-radius: 999px; padding: 1px 9px; cursor: pointer; }
+  .mark[aria-pressed="true"] { color: var(--ai); border-color: var(--ai); }
   .empty { padding: 32px 0; color: var(--muted); font-family: system-ui, sans-serif; }
 </style>
 </head>
@@ -60,6 +66,7 @@
       <button class="chip" data-f="siber" aria-pressed="false">Siber güvenlik</button>
       <button class="chip" data-f="ai" aria-pressed="false">AI / Teknoloji</button>
       <button class="chip" data-f="tr" aria-pressed="false">Türkiye</button>
+      <button class="chip" data-f="unread" aria-pressed="false">Okunmamış</button>
     </div>
   </div>
 
@@ -94,6 +101,14 @@ async function gcCount(path) {
 function gcEvent(path, title) {
   try { if (window.goatcounter && window.goatcounter.count) window.goatcounter.count({ path, title, event: true }); } catch {}
 }
+// Okundu bilgisi bu tarayıcıda saklanır (başka cihaza taşınmaz).
+const READ_KEY = "fraudBultenOkunan";
+let readSet = new Set();
+try { readSet = new Set(JSON.parse(localStorage.getItem(READ_KEY) || "[]")); } catch {}
+function setRead(url, on) {
+  on ? readSet.add(url) : readSet.delete(url);
+  try { localStorage.setItem(READ_KEY, JSON.stringify([...readSet])); } catch {}
+}
 const words = (t) => (t || "").trim().split(/\s+/).filter(Boolean).length;
 
 const CAT = { fraud: "Fraud", siber: "Siber güvenlik", ai: "AI / Teknoloji" };
@@ -112,20 +127,21 @@ function render() {
   const all = current.items;
   const sumMin = Math.max(1, Math.round(all.reduce((s, it) => s + words(it.title) + words(it.summary), 0) / 180));
   const stats = $("stats");
-  stats.textContent = all.length + " haber · özetlerin tamamı yaklaşık " + sumMin + " dk";
+  const unread = all.filter((it) => !readSet.has(it.url)).length;
+  stats.textContent = all.length + " haber · " + unread + " okunmamış · özetlerin tamamı yaklaşık " + sumMin + " dk";
   gcCount(location.pathname).then((c) => { if (c) stats.textContent += " · sayfa " + c + " kez görüntülendi"; });
   const items = current.items
     .map((it, i) => ({ ...it, n: i + 1 }))
-    .filter((it) => filter === "all" || it.category === filter || it.region === filter);
+    .filter((it) => filter === "all" || it.category === filter || it.region === filter || (filter === "unread" && !readSet.has(it.url)));
   if (!items.length) {
     const p = document.createElement("p");
     p.className = "empty";
-    p.textContent = "Bu hafta bu filtreye uyan haber yok.";
+    p.textContent = filter === "unread" ? "Bu haftanın bütün haberlerini okudun." : "Bu hafta bu filtreye uyan haber yok.";
     list.append(p);
     return;
   }
   for (const it of items) {
-    const li = document.createElement("li"); li.className = "item";
+    const li = document.createElement("li"); li.className = "item" + (readSet.has(it.url) ? " done" : "");
     const num = document.createElement("div"); num.className = "num"; num.textContent = String(it.n).padStart(2, "0");
     const body = document.createElement("div");
     const tags = document.createElement("div"); tags.className = "tags";
@@ -135,21 +151,30 @@ function render() {
     const h = document.createElement("h2"); h.textContent = it.title;
     const p = document.createElement("p"); p.textContent = it.summary;
     const extra = [];
-    if (it.read_min) {
+    if (it.read_min || it.coverage) {
       const rd = document.createElement("div"); rd.className = "read";
-      rd.textContent = "⏱ Kaynak haber: " + it.read_min + " dk okuma";
+      const parts = [];
+      if (it.read_min) parts.push("⏱ Kaynak haber: " + it.read_min + " dk okuma");
+      if (it.coverage) parts.push("📰 " + it.coverage + " farklı yayında yer aldı");
+      rd.textContent = parts.join("  ·  ");
       extra.push(rd);
     }
     const ev = "tik/" + current.date + "/" + String(it.n).padStart(2, "0");
     const meta = document.createElement("div"); meta.className = "meta";
     const a = document.createElement("a"); a.href = it.url; a.target = "_blank"; a.rel = "noopener"; a.textContent = it.source;
-    a.addEventListener("click", () => gcEvent(ev, it.title));
+    a.addEventListener("click", () => { gcEvent(ev, it.title); setRead(it.url, true); setTimeout(render, 300); });
     meta.append(fmt(it.date) + " · Kaynak: ", a);
     for (const m of it.more || []) {
       const b = document.createElement("a"); b.href = m.url; b.target = "_blank"; b.rel = "noopener"; b.textContent = m.source;
       b.addEventListener("click", () => gcEvent(ev, it.title));
       meta.append(", ", b);
     }
+    const mk = document.createElement("button"); mk.className = "mark"; mk.type = "button";
+    const isRead = readSet.has(it.url);
+    mk.setAttribute("aria-pressed", isRead ? "true" : "false");
+    mk.textContent = isRead ? "✓ Okundu" : "Okundu işaretle";
+    mk.addEventListener("click", () => { setRead(it.url, !readSet.has(it.url)); render(); });
+    meta.append(mk);
     gcCount(ev).then((c) => { if (c) meta.append(" · " + c + " tıklama"); });
     body.append(tags, h, p, ...extra, meta);
     li.append(num, body);

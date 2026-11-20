@@ -25,8 +25,8 @@ Her hafta dünyadan ve Türkiye'den öne çıkan dijital fraud, bankacılığın
 
 ## Veri biçimi
 data/index.json: {"issues":[{"date":"2026-11-23","file":"2026-11-23.json","label":"17–23 Kasım 2026"}]}  (en yenisi en üstte)
-Haftalık dosya: {"date":"2026-11-23","label":"17–23 Kasım 2026","items":[{"title":"","summary":"","category":"fraud|siber|ai","region":"tr|dunya","source":"","url":"","read_min":4,"date":"YYYY-AA-GG","more":[{"source":"","url":""}]}]}
-(read_min ve more isteğe bağlı)
+Haftalık dosya: {"date":"2026-11-23","label":"17–23 Kasım 2026","items":[{"title":"","summary":"","category":"fraud|siber|ai","region":"tr|dunya","source":"","url":"","read_min":4,"coverage":12,"date":"YYYY-AA-GG","more":[{"source":"","url":""}]}]}
+(read_min, coverage ve more isteğe bağlı)
 
 ## Yayın ilkeleri (okuyucu: bankacılık ve ödeme tarafında fraud ile ilgilenen biri)
 - Öncelikli konu, bankacılığın geleceği. Bu haberlere daha çok yer ver: yeni bankacılık kanalları, yeni ödeme sistemleri ve yöntemleri, bankacılık teknolojisi, fraud önleme çözümleri. Türkiye'deki karşılıklarını özellikle ara.
@@ -40,6 +40,7 @@ Haftalık dosya: {"date":"2026-11-23","label":"17–23 Kasım 2026","items":[{"t
 - Rutin veri ihlali duyurularına (ör. KVKK bildirimleri) en fazla 1-2 cümle ayır.
 - Büyük altyapı kesintileri de haber adayıdır (ör. Microsoft 365 kesintisi).
 - Okuma süresi: read_min alanına kaynak haberin tahmini okuma süresini yaz (ana metnin kelime sayısı / 220, yukarı yuvarla). Yayıncı süreyi kendisi veriyorsa onu kullan; belirleyemiyorsan alanı boş bırak.
+- Gündem etkisi: kaynak sitelerin tıklanma sayıları dışarıdan görülemez; bunun yerine haberin kaç farklı saygın yayında kendi haberi olarak yer aldığını say (kopya, toplayıcı ve tarama siteleri hariç) ve coverage alanına yaz. Emin değilsen alanı koyma. Sıralamada yardımcı ölçüttür, bankacılığın geleceği önceliğinin önüne geçmez.
 - Metni kaynaktan kopyalama, kendi cümlelerinle yaz; kaynakta olmayan bilgiyi ekleme.
 
 ## Kaynaklar ve ölçütler (başlangıç listesi)
@@ -54,7 +55,8 @@ Haftalık dosya: {"date":"2026-11-23","label":"17–23 Kasım 2026","items":[{"t
 - Tek dosya, derleme adımı yok; data/index.json ve haftalık dosyaları fetch ile okur.
 - Üstte yalnızca "Fraud & Teknoloji Bülteni" başlığı; slogan veya "haftanın teması" cümlesi yok. Altında hafta seçici ve filtreler (Tümü / Fraud / Siber güvenlik / AI-Teknoloji / Türkiye).
 - Listenin üstünde: "N haber · özetlerin tamamı yaklaşık X dk" (başlık + özet kelime sayısı / 180).
-- Haberler numaralı listelenir. Her haberde kategori ve bölge etiketi, başlık ve özet bulunur. Özetin altında, read_min varsa "⏱ Kaynak haber: X dk okuma" etiketi; onun altında tarih ve kaynak bağlantısı.
+- Haberler numaralı listelenir. Her haberde kategori ve bölge etiketi, başlık ve özet bulunur. Özetin altında, varsa "⏱ Kaynak haber: X dk okuma · 📰 Y farklı yayında yer aldı" etiketi; onun altında tarih, kaynak bağlantısı ve "Okundu işaretle" düğmesi.
+- Okundu takibi: kaynak bağlantısına tıklanan ya da düğmeyle işaretlenen haber soluklaşır, numarasının altına ✓ gelir (düğmeyle geri alınabilir). Ziyaret edilmiş bağlantılar mor görünür. Filtrelere "Okunmamış" eklenir; üstteki satırda "N haber · M okunmamış" yazar. Bilgi localStorage'da tutulur (try/catch ile), yalnızca o tarayıcıda geçerlidir.
 - Altta yalnızca şu not: haftalık güncellenir, özetler Claude tarafından yazılır, doğrulama için kaynağa bakılmalıdır. Açık/koyu tema desteklensin. İçerik textContent ile yazılsın (innerHTML yok).
-- İsteğe bağlı sayaç (GoatCounter, çerezsiz): index.html'de `const GOATCOUNTER = ""` ayarı olsun. Kod yazılınca sayfa görüntülenmeleri ve her haberin kaynak bağlantısına tıklamalar ("tik/<tarih>/<sıra>" olayı) sayılır. GoatCounter'da "Allow adding visitor counts on your website" açıksa sayılar sayfada da görünür ("sayfa X kez görüntülendi", haber altında "X tıklama"). Kod boşsa sayaç tamamen kapalı. Hesabı ben açarım, kodu sana veririm.
+- İsteğe bağlı site sayacı (GoatCounter, çerezsiz; bu sitenin kendi trafiğini ölçer, kaynak sitelerinkini değil): index.html'de `const GOATCOUNTER = ""` ayarı olsun. Kod yazılınca sayfa görüntülenmeleri ve her haberin kaynak bağlantısına tıklamalar ("tik/<tarih>/<sıra>" olayı) sayılır. GoatCounter'da "Allow adding visitor counts on your website" açıksa sayılar sayfada da görünür ("sayfa X kez görüntülendi", haber altında "X tıklama"). Kod boşsa sayaç tamamen kapalı. Hesabı ben açarım, kodu sana veririm.
 ```

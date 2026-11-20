@@ -29,6 +29,11 @@ Haftalık sayı hazırlanırken uyulacak kurallar. Okuyucu bankacılık ve ödem
 - Her haber için kaynak haberin tahmini okuma süresini `read_min` alanına yaz: ana metnin kelime sayısı / 220, yukarı yuvarla (en az 1). Yayıncı okuma süresini kendisi veriyorsa onu kullan.
 - Süreyi belirleyemiyorsan alanı boş bırak; tahmin uydurma.
 
+## Gündem etkisi (haber ne kadar ilgi gördü)
+- Kaynak sitelerin tıklanma sayıları dışarıdan görülemediği için ilgi ölçüsü olarak haberin kaç farklı yayında yer aldığını kullan. Taramada aynı olayı kendi haberi olarak veren farklı, saygın yayınları say; birebir kopya, toplayıcı ve tarama siteleri sayılmaz. Sonucu `coverage` alanına yaz.
+- Sayabildiğin kadar yaz, şişirme; emin değilsen alanı koyma.
+- Gündem etkisi sıralamada yardımcı ölçüttür; bankacılığın geleceği önceliğinin önüne geçmez.
+
 ## Kapsam
 - Büyük altyapı kesintileri de (ör. Microsoft 365 kesintisi) haber adayıdır.
 - Her haberin bağlantısı yayın öncesi açılarak kontrol edilir; açılmayan bağlantı kullanılmaz.
