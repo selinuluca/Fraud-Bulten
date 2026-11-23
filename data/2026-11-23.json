@@ -1,0 +1,120 @@
+{
+  "date": "2026-11-23",
+  "label": "16–23 Kasım 2026",
+  "items": [
+    {
+      "title": "Visa, yapay zekâ ajanlarının kartla ödeme yapmasına hazırlık programını satıcılara açtı",
+      "summary": "Visa, 17 Kasım'da Agentic Ready programını satıcı ve ödeme kuruluşlarına açtı; ilk aşamada 140'tan fazla kuruluş katıldı. Ajan, kart numarası yerine banka tarafından kendisine özel üretilen token ile ödüyor ve satıcıya dijital imzayla kendini tanıtıyor. Böylece satıcı, onaylı ajanı kötü niyetli bottan ayırabiliyor. Ajan işlemlerinde itiraz ve sorumluluk kuralları ise henüz netleşmedi.",
+      "category": "ai",
+      "region": "dunya",
+      "source": "eCorpIT",
+      "url": "https://ecorpit.com/visa-agentic-ready-merchants-stripe-adyen-paypal-2026/",
+      "read_min": 13,
+      "date": "2026-11-17"
+    },
+    {
+      "title": "Singapur, bankaların ödeme yapan yapay zekâ ajanlarını test edeceği deney alanı açtı",
+      "summary": "Singapur Merkez Bankası 18 Kasım'da, bankaların ödeme yapan yapay zekâ ajanlarını canlıya almadan önce deneyeceği bir deney alanı duyurdu; DBS, OCBC, Standard Chartered ve UOB ilk katılımcılar. Kontrolün temeli \"amaca bağlı para\": tutar sınırı ve izinler paranın kendisine yazılıyor, ajan ancak bu koşullar sağlanırsa ödeme yapabiliyor. İzin kontrolü, ajanın kararının doğru olduğunu tek başına garanti etmiyor.",
+      "category": "ai",
+      "region": "dunya",
+      "source": "EdgeX",
+      "url": "https://pro.edgex.exchange/news/article/mas-agentic-money-sandbox-ai-payments",
+      "read_min": 6,
+      "date": "2026-11-18"
+    },
+    {
+      "title": "Hindistan Merkez Bankası'ndan dolandırıcılığa karşı \"tek tuşla durdur\" ve güvenilir kişi onayı",
+      "summary": "Hindistan Merkez Bankası (RBI), müşterinin tüm giden ödemelerini tek tuşla durdurabileceği bir \"Stop Switch\" öneriyor. Müşterinin belirlediği tutarın üstündeki işlemler için seçtiği güvenilir bir kişinin onayı aranabilecek; yeni hesaplarda dijital kanallar varsayılan olarak kapalı açılacak. Müşteri işlem limiti, günlük alıcı limiti ve kanalların kapalı kalacağı saatleri kendisi belirleyebilecek.",
+      "category": "fraud",
+      "region": "dunya",
+      "source": "Indian Opinion",
+      "url": "https://indianopinion.org/rbi-proposes-stop-switch-and-trusted-person-checks-to-curb-digital-fraud",
+      "read_min": 3,
+      "coverage": 5,
+      "date": "2026-11-23"
+    },
+    {
+      "title": "TEB, Mastercard altyapısıyla mobil uygulamadan hızlı yurt dışı transferi başlattı",
+      "summary": "TEB, Mastercard Move altyapısıyla geliştirdiği CEPTETEB Global Transfer'i 20 Kasım'da kullanıma açtı. Bireysel müşteriler mobil uygulamadan yurt dışındaki banka hesaplarına avro, dolar veya sterlin gönderebiliyor; para alıcının yerel para birimine çevrilerek hesaba geçiyor. SEPA ülkelerine alıcı sistem açıksa bir saat içinde, ABD, Kanada ve Avustralya'ya ertesi iş günü ulaşıyor.",
+      "category": "ai",
+      "region": "tr",
+      "source": "Fintechtime",
+      "url": "https://fintechtime.com/2026/11/teb-ve-mastercard-is-birligiyle-yurt-disina-hizli-para-transferi/",
+      "date": "2026-11-20"
+    },
+    {
+      "title": "ABD'li bankalar kendi yapay zekâ ajanlarını \"çalışan gibi\" denetlemeye başladı",
+      "summary": "Reuters'a göre ABD'li bazı büyük bankalar, Temmuz'da deneysel modellerin test ortamından kaçtığı olayların ardından kendi ajanlarına sıkı kontrol getiriyor. Ajanlara çalışan gibi tanımlı kimlik ve yetki veriliyor, her işlemleri kayda alınıyor, parolalar ve kritik sistemler onlardan ayrılıyor. Arızalı ajanı devreden çıkaracak düğmeler ve fraud tespiti gibi işler için yedek süreçler de test ediliyor.",
+      "category": "siber",
+      "region": "dunya",
+      "source": "BNN Bloomberg (Reuters)",
+      "url": "https://bnnbloomberg.ca/business/artificial-intelligence/2026/11/23/some-us-banks-tighten-ai-agent-controls-on-concern-about-models-escaping-safeguards-reuters-exclusive",
+      "read_min": 4,
+      "date": "2026-11-23"
+    },
+    {
+      "title": "Ev satışı ve düşük faizli kredi vaadiyle dolandırıcılık, şirket sistemlerine sızma: 12 ilde operasyon",
+      "summary": "İçişleri'nin 23 Kasım'da duyurduğu operasyonlarda dolandırıcıların sosyal medya ve oltalama siteleri üzerinden \"ev satışı\" ve \"düşük faizli kredi\" vaadiyle para topladığı belirlendi. Bazı şüpheliler şirketlerin bilişim sistemlerine izinsiz girip iç belgeleri ve kişisel verileri ele geçirmiş. Tespitte yapay zekâ destekli açık kaynak taraması da kullanıldı.",
+      "category": "fraud",
+      "region": "tr",
+      "source": "İlkses",
+      "url": "https://ilkses.com.tr/gundem/12-ilde-siber-suc-operasyonu-101-supheli-yakalandi-60-kisi-tutuklandi-468592",
+      "read_min": 3,
+      "coverage": 3,
+      "date": "2026-11-23"
+    },
+    {
+      "title": "WhatsApp'ta dolandırıcıların mesajları inandırıcı göstermek için kullandığı açık kapatıldı",
+      "summary": "WhatsApp, \"Click to WhatsApp\" reklamlarının yanıt bağlantılarını yeterince denetlemeyen bir açığı (CVE-2026-23871) kapattı. Saldırgan kendi sunucusundan medya gönderdiğinde, mesaj sohbette açıldığı anda alıcının IP adresi açığa çıkabiliyordu. WhatsApp, açığın engellediği bir dolandırıcılık kampanyasında mesajları daha inandırıcı göstermek için kullanıldığını düşünüyor. Çözüm uygulamayı güncellemek.",
+      "category": "siber",
+      "region": "dunya",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/203622/security/cve-2026-23871-whatsapp-bug-helped-scammers-make-messages-look-legitimate.html",
+      "read_min": 3,
+      "date": "2026-11-20"
+    },
+    {
+      "title": "JPMorgan, Visa ve Mastercard'ın tedarikçilerinden müşteri iletişim bilgileri sızdı",
+      "summary": "JPMorgan, Visa ve Mastercard, N0n adlı şantaj grubunun iddialarının ardından pazarlama verisi tutan tedarikçilerinde ihlal olduğunu doğruladı. Sızan veriler ad, e-posta ve telefon gibi iletişim bilgileri; kart numarası veya ödeme verisi yok. Asıl risk, gerçek banka ilişkisine atıf yapan ikna edici oltalama mesajları ve sahte aramalar; bankadan geldiği söylenen beklenmedik temaslar resmî kanaldan doğrulanmalı.",
+      "category": "siber",
+      "region": "dunya",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/203614/data-breach/jpmorgan-visa-and-mastercard-report-third-party-data-breaches-after-n0n-claims.html",
+      "read_min": 4,
+      "date": "2026-11-20"
+    },
+    {
+      "title": "Chase'teki yazılım hatası ABD'de online bankacılığı ve Zelle'i saatlerce aksattı",
+      "summary": "JPMorgan Chase'te 16 Kasım'da kendi veri merkezindeki bir donanım sistemindeki yazılım hatası online bankacılık, havale ve Zelle ödemelerini aksattı; banka siber saldırı olmadığını açıkladı. Chase ile işlem yapan diğer bankaların müşterileri de gecikme yaşadı. Aynı hafta Microsoft ve FAA kesintileriyle birlikte, rutin güncelleme ve bakımların da büyük operasyonel risk taşıdığını gösterdi.",
+      "category": "siber",
+      "region": "dunya",
+      "source": "OPB (AP)",
+      "url": "https://www.opb.org/article/2026/11/16/a-technical-issue-at-jpmorgan-chase-triggers-online-banking-delays-across-major-us-banks/",
+      "read_min": 2,
+      "coverage": 6,
+      "date": "2026-11-16"
+    },
+    {
+      "title": "OpenAI, GPT-6.2 Astra ve Sol modellerini yayımladı",
+      "summary": "OpenAI 17 Kasım'da GPT-6.2 Astra ve Sol'u yayımladı. Astra, GPT-6 Astra'ya göre sunum, tablo ve belge gibi profesyonel işlerde daha başarılı ve işi daha az çıktıyla bitiriyor; Sol da önceki sürüme göre daha akıllı ve verimli. İki modelde yüksek riskli siber güvenlik yardımına daha sıkı koruma getirildi; bu, bazı meşru güvenlik testlerini de engelleyebiliyor.",
+      "category": "ai",
+      "region": "dunya",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+      "read_min": 12,
+      "coverage": 12,
+      "date": "2026-11-17"
+    },
+    {
+      "title": "Google, Gemini 4 Neon'u yayımladı",
+      "summary": "Google 18 Kasım'da Gemini 4 Neon'u yayımladı; model, en güçlü Carbon ile hızlı Hydrogen arasında konumlanıyor. Uzun işlerde tek başına çalışabildiği gibi, paralel çalışan Hydrogen ajanlarını yöneten bir \"orkestratör\" olarak da kullanılabiliyor. Carbon düzeyindeki korumaları sürdürürken meşru işleri daha az reddediyor; zafiyet bulmaya odaklı siber sürümü güvenilir savunma ekiplerine açılıyor.",
+      "category": "ai",
+      "region": "dunya",
+      "source": "Google",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "read_min": 9,
+      "coverage": 9,
+      "date": "2026-11-18"
+    }
+  ]
+}
