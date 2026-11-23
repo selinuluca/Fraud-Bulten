@@ -23,6 +23,10 @@ Haftalık taramada bakılan kaynaklar. Liste başlangıç noktasıdır; web aram
 - Merchant Risk Council
 - Düzenleyiciler ve kolluk: ABD Adalet Bakanlığı, FBI/IC3, Europol, UK PSR/FCA, ECB/EBA, FTC
 
+## Dünya: zararlı yazılım ve tehdit araştırmaları
+- ThreatFabric, Zimperium zLabs, Cleafy, Group-IB, Kaspersky Securelist, ESET WeLiveSecurity, Check Point Research, Google Threat Intelligence
+- Bu raporları haberleştiren yayınlar: The Hacker News, BleepingComputer
+
 ## Dünya: siber güvenlik
 - BleepingComputer, The Record, KrebsOnSecurity, Dark Reading, SecurityWeek, The Hacker News
 - CISA KEV kataloğu ve uyarıları

@@ -43,6 +43,17 @@
       "date": "2026-11-20"
     },
     {
+      "title": "Bazuka: Kurbanlarını yapay zekâya puanlatan yeni Android bankacılık zararlısı",
+      "summary": "ThreatFabric'in 18 Kasım tarihli raporuna göre Bazuka, sahte bir \"premium TikTok\" uygulamasıyla mağaza dışından bulaşıyor. Erişilebilirlik ve kablosuz ADB izinlerini kötüye kullanıp yazılanları kaydediyor, SMS ve 2FA kodlarını çalıyor, banka uygulamasına sahte ekran açıyor ve telefonu uzaktan yönetiyor. Bunları ana ekran görüntüsünün arkasına saklıyor; operatörler hangi kurbanın daha değerli olduğunu yapay zekâya puanlatıyor.",
+      "category": "fraud",
+      "region": "dunya",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html",
+      "read_min": 5,
+      "coverage": 10,
+      "date": "2026-11-18"
+    },
+    {
       "title": "ABD'li bankalar kendi yapay zekâ ajanlarını \"çalışan gibi\" denetlemeye başladı",
       "summary": "Reuters'a göre ABD'li bazı büyük bankalar, Temmuz'da deneysel modellerin test ortamından kaçtığı olayların ardından kendi ajanlarına sıkı kontrol getiriyor. Ajanlara çalışan gibi tanımlı kimlik ve yetki veriliyor, her işlemleri kayda alınıyor, parolalar ve kritik sistemler onlardan ayrılıyor. Arızalı ajanı devreden çıkaracak düğmeler ve fraud tespiti gibi işler için yedek süreçler de test ediliyor.",
       "category": "siber",

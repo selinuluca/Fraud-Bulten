@@ -25,6 +25,7 @@ Her hafta dünyadan ve Türkiye'den öne çıkan dijital fraud, bankacılığın
 - Sıralama: en üste bankacılığın ve ödemenin geleceğini değiştiren gelişmeler (ajanların yaptığı ödemeler, yeni ödeme sistemleri ve kanallar, yapay zekâ destekli fraud, yeni fraud önleme teknolojileri); ardından yeni dolandırıcılık ve saldırı yöntemleri; sonra siber güvenlik olayları; en sonda rutin veri ihlali duyuruları. Gündem etkisi yardımcı ölçüttür, bu sıranın önüne geçmez.
 - Uzunluk: en fazla 4 satır, yani en fazla 4 kısa cümle ve yaklaşık 400 karakter. Virgüllerle uzayan cümle kurma; sığmayan ayrıntıyı at.
 - Odak: "kim, kaç kişi, kaç para" değil; "nasıl yapılıyor, nasıl tespit edildi, kullanıcı ve banka neye dikkat etmeli". Gözaltı ve tutuklama sayıları, el konulan altyapı, açıkta kalan sunucu sayısı gibi yan bilgileri yazma.
+- Güvenlik şirketlerinin yeni zararlı yazılım ve dolandırıcılık altyapısı araştırmaları da öncelikli haber adayıdır; özellikle mobil bankacılığı hedefleyen, SMS ve 2FA kodu çalan, sahte ekran açan, cihazı uzaktan yöneten ya da yapay zekâ kullanan araçlar. Özette nasıl bulaştığını, neler yapabildiğini ve kendini nasıl gizlediğini anlat.
 - Terimleri ilk geçtikleri yerde kısaca açıkla (ör. "onay oltalaması").
 - Yeni ödeme sistemi veya teknoloji haberlerinde nasıl çalıştığını ve geleneksel yöntemden farkını anlat.
 - Güvenlik açıklarını "şöyle bir zafiyet vardı, şuna yol açıyordu, üretici kapattı" diye anlat ve bankacılık açısından anlamını ekle.
@@ -39,6 +40,7 @@ Her hafta dünyadan ve Türkiye'den öne çıkan dijital fraud, bankacılığın
 - Bankacılığın geleceği: TCMB ödeme sistemleri (FAST, TR Karekod), BKM, TBB; Türk bankalarının yeni kanal, ödeme ve fraud önleme ürünü duyuruları (ödül, sponsorluk, finansal sonuç haberleri hariç); Finextra, The Financial Brand, Payments Dive, American Banker, Webrazzi Fintech; Visa ve Mastercard inovasyon duyuruları; wero, Pix, UPI gibi yeni ödeme sistemleri.
 - Türkiye: KVKK veri ihlali bildirimleri, USOM, Siber Güvenlik Başkanlığı, BTK, BDDK, MASAK, SPK, İçişleri/Emniyet açıklamaları (AA, DHA), ShiftDelete, Webrazzi.
 - Fraud ve ödeme: Finextra, The Paypers, PYMNTS, Merchant Risk Council, ABD Adalet Bakanlığı, FBI/IC3, Europol, FCA/PSR, ECB/EBA, FTC.
+- Zararlı yazılım araştırmaları: ThreatFabric, Zimperium zLabs, Cleafy, Group-IB, Kaspersky Securelist, ESET, Check Point Research, Google Threat Intelligence.
 - Siber: BleepingComputer, The Record, KrebsOnSecurity, Dark Reading, SecurityWeek, The Hacker News, CISA KEV.
 - AI: OpenAI, Anthropic, Google, Microsoft ve Meta'nın kendi duyuruları; TechCrunch, Reuters.
 - Seçim ölçütleri: etki (kaç kişi/kurum, ne kadar yaygın), yenilik (yeni yöntem, düzenleme, teknoloji), Türkiye ve bankacılık açısından ilgililik, güvenilirlik (birincil kaynak veya saygın yayın). Türkiye haberleri her hafta aranır (tercihen en az 2-3).

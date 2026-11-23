@@ -8,6 +8,7 @@ Haftalık sayı hazırlanırken uyulacak kurallar. Okuyucu bankacılık ve ödem
 
 ## Bankacılığın geleceği (öncelikli konu)
 - Bankacılığın geleceğine dair haberlere daha fazla yer ver: yeni bankacılık kanalları, yeni ödeme sistemleri ve yöntemleri, bankacılık teknolojisi, fraud önleme çözümleri ve teknolojileri.
+- Güvenlik şirketlerinin yeni zararlı yazılım ve dolandırıcılık altyapısı araştırmaları da öncelikli haber adayıdır; özellikle mobil bankacılığı hedefleyen Android/iOS trojanları, SMS ve 2FA kodu çalan, sahte ekran açan, cihazı uzaktan yöneten ya da yapay zekâ kullanan araçlar. Özette zararlının nasıl bulaştığını, neler yapabildiğini ve kendini nasıl gizlediğini anlat.
 - Türkiye'deki karşılıkları (ör. TCMB, BKM, bankaların yeni kanal ve ödeme ürünleri) özellikle aranır.
 
 ## Sıralama
